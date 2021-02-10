@@ -1,0 +1,181 @@
+/* Reset */
+body {
+    background-color: #1d1332;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.circular-navbar {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    /* background-color: white; */
+    margin: 190px auto;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: bold;
+    transition: 0.24s 0.2s;
+}
+
+.circle {
+    position: absolute;
+    font-size: 1.6rem;
+    position: absolute;
+    top:45px;
+    left: 50px;
+    color:  white;
+}
+
+.circular-navbar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -75px;
+    left: -75px;
+    border: 140px solid transparent;
+    cursor: grabbing;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 1.4s 0.07s;
+    z-index: -1;
+}
+
+.circular-navbar:hover .menu {
+    transition: transform 0.4s 0.08s, z-index 0s 0.5s;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.circular-navbar .menu li {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transform-origin: 100px 100px;
+    transition: all 0.5s 0.1s;
+}
+
+.circular-navbar:hover .menu li {
+    transition: all 2s;
+}
+
+.circular-navbar .menu li a {
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 60%;
+    color: white;
+    transition: 0.7s;
+}
+
+/* Positioning */
+.circular-navbar:hover .menu li:nth-child(1) {
+    transition-delay: 0.02s;
+    transform: rotate(85deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(1) a {
+    transition-delay: 0.04s;
+    transform: rotate(635deg);
+    background: #2931f2;
+}
+
+.circular-navbar:hover .menu li:nth-child(2) {
+    transition-delay: 0.04s;
+    transform: rotate(125deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(2) a {
+    transition-delay: 0.08s;
+    transform: rotate(595deg);
+    background: #d95063;
+}
+
+.circular-navbar:hover .menu li:nth-child(3) {
+    transition-delay: 0.06s;
+    transform: rotate(165deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(3) a {
+    transition-delay: 0.12s;
+    transform: rotate(555deg);
+    background: #f60002;
+}
+
+.circular-navbar:hover .menu li:nth-child(4) {
+    transition-delay: 0.08s;
+    transform: rotate(205deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(4) a {
+    transition-delay: 0.16s;
+    transform: rotate(515deg);
+    background: #00b0e9;
+}
+
+.circular-navbar:hover .menu li:nth-child(5) {
+    transition-delay: 0.1s;
+    transform: rotate(245deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(5) a {
+    transition-delay: 0.2s;
+    transform: rotate(475deg);
+    background: #cc1717;
+}
+
+.circular-navbar:hover .menu li:nth-child(6) {
+    transition-delay: 0.12s;
+    transform: rotate(285deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(6) a {
+    transition-delay: 0.24s;
+    transform: rotate(435deg);
+    background: #f7770a;
+}
+
+.circular-navbar:hover .menu li:nth-child(7) {
+    transition-delay: 0.14s;
+    transform: rotate(325deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(7) a {
+    transition-delay: 0.28s;
+    transform: rotate(395deg);
+    background: #c51f23;
+}
+
+.circular-navbar:hover .menu li:nth-child(8) {
+    transition-delay: 0.16s;
+    transform: rotate(365deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(8) a {
+    transition-delay: 0.32s;
+    transform: rotate(355deg);
+    background: #1db1e5;
+}
+
+.circular-navbar:hover .menu li:nth-child(9) {
+    transition-delay: 0.18s;
+    transform: rotate(405deg);
+}
+
+.circular-navbar:hover .menu li:nth-child(9) a {
+    transition-delay: 0.36s;
+    transform: rotate(315deg);
+    background: #302f2f;
+}
+
+
